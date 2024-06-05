@@ -22,24 +22,35 @@
 
 To get started with InstaTransVision, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository or download the zip file to your local machine:
     ```bash
-    git clone https://github.com/yourusername/InstaTransVision.git
+    git clone https://github.com/arunk7033/InstaTransVision.git
     ```
-2. Navigate to the project directory:
+2. Navigate to the project directory through your terminal by copying the path of zip file after extraction:
     ```bash
-    cd InstaTransVision
+    cd path
+    ```
+3. Open the project in vscode by following the command:
+    ```bash
+    code .
+    ```
+3. Activate the virtual environment venv:
+    ```bash
+    conda activate venv/
     ```
 3. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
     ```
+3. Install the missing dependency if any for ex: streamlit:
+    ```bash
+    pip install streamlit
 
 ## Usage
 
 1. Launch the application:
     ```bash
-    python app.py
+    streamlit run vision_qna.py
     ```
 2. Open your web browser and go to `http://localhost:5000`.
 3. Enter the YouTube URL and follow the on-screen instructions to translate, summarize, and interact with the video content.
